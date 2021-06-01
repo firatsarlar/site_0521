@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "outDir": "./public",
+    "target": "es5", //"esnext",//
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "strict": false,
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
+    "plugins": [
+      {
+      }
+    ]
+  }, 
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    // "./src/global.d.ts"
+    // "global.d.ts"
+  ],
+}

@@ -1,0 +1,56 @@
+
+import strings from "../../data/string";
+
+const strEn = strings.en;
+const strDe = strings.de;
+
+interface RouteDef {
+    machine_name: string
+    menu_display: string | undefined
+    path: string | undefined
+    component?: string
+    subRoutes?: Array<RouteDef> | undefined
+    /**
+     * Meta Description of page
+     */
+    meta_desc?: string
+    head_title?: string
+
+}
+interface LangBasedRoute {
+    en?: Array<RouteDef>
+    de?: Array<RouteDef>
+}
+home page
+PROJECTS
+pavilion projects
+custom made projects
+about us
+PHILOSOPHY
+TEAM
+contact
+imprint
+
+startseite
+PROJEKTE
+gemeinschaftsstände projekte
+individuell projekte
+über uns
+PHILOSOPHIE	
+TEAM
+KONTAKT
+
+const routes = {
+    en: [
+        {
+            machine_name: "home_page",
+            menu_display: strEn.home_page,
+            path:""
+        }
+
+    ],
+    de: [
+
+    ]
+
+} as LangBasedRoute;
